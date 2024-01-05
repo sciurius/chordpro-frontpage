@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ('_header.ejs') %>
+<body data-bs-theme="light">
+
+<div id="top" class="container">
+
+  <div id="banner">
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-6">
+        <h1>Bootstrap Customizer</h1>
+        <p class="lead">This page shows basic Bootstrap objects based on your Bootstrap Customizer style sheet.</p>
+      </div>
+      <div class="col-lg-4 col-md-5 col-sm-6">
+      </div>
+    </div>
+  </div>
+
+  <!--begin:Navbars-->
+  <hr>
+  <%- include ('_navbars.ejs') %>
+  <!--end:Navbars-->
+
+  <!--begin:Buttons-->
+  <hr>
+  <%- include ('_buttons.ejs') %>
+  <!--end:Buttons-->
+
+  <!--begin:Typography-->
+  <hr>
+  <%- include ('_typography.ejs') %>
+  <!--end:Typography-->
+
+  <!--begin:Tables-->
+  <hr>
+  <%- include ('_tables.ejs') %>
+  <!--end:Tables-->
+
+  <!--begin:Forms-->
+  <hr>
+  <%- include ('_forms.ejs') %>
+  <!--end:Forms-->
+
+  <!--begin:Navs-->
+  <hr>
+  <%- include ('_navs.ejs') %>
+  <!--end:Navs-->
+
+  <!--begin:Indicators-->
+  <hr>
+  <%- include ('_indicators.ejs') %>
+  <!--end:Indicators-->
+
+  <!--begin:Progress-->
+  <hr>
+  <%- include ('_progress.ejs') %>
+  <!--end:Progress-->
+
+  <!--begin:Containers-->
+  <hr>
+  <%- include ('_containers.ejs') %>
+  <!--end:Containers-->
+
+  <!--begin:Dialogs-->
+  <hr>
+  <%- include ('_dialogs.ejs') %>
+  <!--end:Dialogs-->
+
+  <footer id="footer">
+    <hr>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="list-unstyled">
+          <li class="float-end"><a href="#top">Back to top</a></li>
+          <li><a href="https://www.lewe.com/">Web</a></li>
+          <li><a href="https://github.com/glewe/bootstrap-customizer">GitHub</a></li>
+        </ul>
+        <p>Made by <a href="https://www.lewe.com/">George Lewe</a>.</p>
+        <p>Page layout based on the <a href="https://bootswatch.com" target="_blank">Bootswatch</a> sample page.</p>
+        <p>Code released under the <a href="https://github.com/glewe/bootstrap-customizer/blob/main/LICENSE">MIT License</a>.</p>
+        <p>Based on <a href="https://getbootstrap.com/" rel="nofollow">Bootstrap</a>. Icons from <a href="https://icons.getbootstrap.com/" rel="nofollow">Bootstrap Icons</a>. Web fonts from <a href="https://fonts.google.com/" rel="nofollow">Google</a>.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script type="module" src="js/bootstrap-custom.min.js"></script>
+</body>
+</html>
