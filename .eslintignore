@@ -6,3 +6,5 @@
 /docs_html/
 /public/
 **/env.d.ts
+/assets/herobiz/
+/assets/vendor/

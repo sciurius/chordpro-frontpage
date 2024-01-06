@@ -24,12 +24,12 @@ const banner = `/*!
  */`
 
 module.exports = {
-  input: 'src/js/bootstrap-custom.js',
+  input: 'src/js/chordpro-frontpage.js',
   output: {
-    file: 'dist/js/bootstrap-custom.js',
+    file: 'dist/js/chordpro-frontpage.js',
     format: 'es',
     banner,
-    name: 'bootstrap-custom',
+    name: 'chordpro-frontpage',
   },
   // plugins: [typescript()]
 }

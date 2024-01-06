@@ -12,7 +12,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "npm-run-all js css html img",
+    "assets": "node src/config/assets.config.mjs",
+    "build": "npm-run-all js css html img assets",
     "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules src/scss/bootstrap-custom.scss:dist/css/bootstrap-custom.css src/scss/bsc-tooltips.scss:dist/css/bsc-tooltips.css",
     "css-copy": "node src/config/css.config.mjs",
     "css-lint": "stylelint src/scss/",
@@ -28,9 +29,9 @@
     "js": "npm-run-all js-compile js-lint js-minify",
     "js-compile": "rollup --config src/config/rollup.config.cjs --sourcemap --context window",
     "js-lint": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives .",
-    "js-minify": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap-custom.js.map,includeSources,url=bootstrap-custom.min.js.map\" --output dist/js/bootstrap-custom.min.js dist/js/bootstrap-custom.js",
+    "js-minify": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/chordpro-frontpage.js.map,includeSources,url=chordpro-frontpage.min.js.map\" --output dist/js/chordpro-frontpage.min.js dist/js/chordpro-frontpage.js",
     "server": "sirv dist/ --dev --no-clear --port 3000",
-    "server-http": "http-server --port 3000",
+    "server-http": "http-server --port 3000 -o",
     "start": "npm-run-all --parallel watch server",
     "watch": "nodemon --watch src -e html,ejs,scss -x \"npm run build\" --ignore src/scss/_timestamp.scss",
     "test": "npm-run-all css-lint css"
