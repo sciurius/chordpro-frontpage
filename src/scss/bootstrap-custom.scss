@@ -115,10 +115,6 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
  */
 @import "icon-list";
 
-body {
-  padding: 1.5rem;
-}
-
 .color-bitcoin {
   color: #f7931a;
 }
@@ -129,13 +125,4 @@ body {
 
 .color-paypal {
   color: #253B80;
-}
-
-#footer {
-  margin: 5em 0;
-}
-
-#footer p {
-  margin-bottom: 0;
-  clear: left;
 }
