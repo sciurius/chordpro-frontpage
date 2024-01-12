@@ -14,7 +14,7 @@
   "scripts": {
     "assets": "node src/config/assets.config.mjs",
     "build": "npm-run-all js css html img assets",
-    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules src/scss/bootstrap-custom.scss:dist/css/bootstrap-custom.css src/scss/bsc-tooltips.scss:dist/css/bsc-tooltips.css",
+    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules src/scss/chordpro-custom.scss:dist/css/chordpro-custom.css src/scss/bsc-tooltips.scss:dist/css/bsc-tooltips.css",
     "css-copy": "node src/config/css.config.mjs",
     "css-lint": "stylelint src/scss/",
     "css-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*rtl*.css\"",
