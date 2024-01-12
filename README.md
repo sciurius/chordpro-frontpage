@@ -35,7 +35,7 @@ You can run a local web server on port 3000 like so:
 ```sh
 npm run start
 ```
-Navigate your browser to `http://localhost:3000/` to see a sample page reflecting your custom Bootstrap styles.
+Navigate your browser to `http://localhost:3000/` to see the website on your local machine.
 
 ## Enjoy
 
