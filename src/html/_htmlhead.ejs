@@ -4,16 +4,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="title" content="<%= title %>">
   <meta name="author" content="<%= author %>">
-  <meta name="description" content="This is the official site for ChordPro, a simple text format for the notation of lyrics with chords.">
+  <meta name="description" content="<%= description %>">
   <meta name="keywords" content="chordpro chord sheet music guitar lyrics instrument">
   <meta name="version" content="<%= version %>">
   <%- include ('_timestamp.ejs') %>
 
-  <!-- Favicons -->
+  <!-- Favicon -->
   <link rel="icon" href="img/chordpro/chordpro-icon-trans-32_x_32.png">
 
   <!-- Social Media Icons -->
-  <link rel="canonical" href=".">
   <link rel="apple-touch-icon" sizes="57x57" href="img/chordpro/chordpro-icon-trans-57_x_57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/chordpro/chordpro-icon-trans-60_x_60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/chordpro/chordpro-icon-trans-72_x_72.png">
@@ -33,19 +32,19 @@
   <meta name="msapplication-TileImage" content="img/chordpro/chordpro-icon-trans-144_x_144.png">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="ChordPro">
-  <meta property="og:description" content="This is the official site for ChordPro, a simple text format for the notation of lyrics with chords.">
+  <meta property="og:title" content="<%= title %>">
+  <meta property="og:description" content="<%= description %>">
   <meta property="og:url" content=".">
-  <meta property="og:site_name" content="ChoprdPro">
+  <meta property="og:site_name" content="<%= title %>">
   <meta property="og:image" content="img/chordpro/og-image.jpg">
   <meta property="og:image:secure_url" content="img/chordpro/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="en_US">
-  <meta property="og:updated_time" content="2024-01-15T19:53:56+00:00">
+  <%- include ('_timestamp-og.ejs') %>
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:description" content="This is the official site for ChordPro, a simple text format for the notation of lyrics with chords.">
-  <meta name="twitter:title" content="ChordPro">
+  <meta name="twitter:description" content="<%= description %>">
+  <meta name="twitter:title" content="<%= title %>">
   <meta name="twitter:image" content="img/chordpro/twitter-image.jpg">
 
   <!-- Google Fonts -->

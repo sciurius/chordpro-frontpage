@@ -9,6 +9,7 @@ consoleStamp(console, {format: ':date("yyyy-mm-dd HH:MM:ss").white.bgBlue'});
 let action = 'Creating _timestamp.ejs'
 
 var lastCompile = new Date();
+var lastCompileISO = lastCompile.toISOString();
 //
 // Format to custom ISO 8601
 //
@@ -27,6 +28,7 @@ lastCompile =
 console.log('Begin::' + action)
 try {
   fs.writeFile('./src/html/_timestamp.ejs', '<meta name="created" content="' + lastCompile + '">')
+  fs.writeFile('./src/html/_timestamp-og.ejs', '<meta property="og:updated_time" content="' + lastCompileISO + '">')
   console.log('End::' + action)
 } catch (error) {
   consoleStamp(console, {format: ':date("yyyy-mm-dd HH:MM:ss").white.bgRed'});
