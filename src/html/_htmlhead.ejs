@@ -2,10 +2,12 @@
   <!-- Meta Tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="ChordPro">
-  <meta name="author" content="George Lewe">
+  <meta name="title" content="<%= title %>">
+  <meta name="author" content="<%= author %>">
   <meta name="description" content="This is the official site for ChordPro, a simple text format for the notation of lyrics with chords.">
   <meta name="keywords" content="chordpro chord sheet music guitar lyrics instrument">
+  <meta name="version" content="<%= version %>">
+  <%- include ('_timestamp.ejs') %>
 
   <!-- Favicons -->
   <link rel="icon" href="img/chordpro/chordpro-icon-trans-32_x_32.png">

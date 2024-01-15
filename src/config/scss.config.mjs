@@ -6,7 +6,7 @@ const version = pkg.version;
 const year = new Date().getFullYear()
 
 consoleStamp(console, {format: ':date("yyyy-mm-dd HH:MM:ss").white.bgBlue'});
-let action = 'Creating _timestamp.scss'
+let action = 'Creating _timestamp.ejs'
 
 var lastCompile = new Date();
 //
@@ -26,7 +26,7 @@ lastCompile =
 //
 console.log('Begin::' + action)
 try {
-  fs.writeFile('./src/scss/_timestamp.scss', "$version: \"" + version + "\" !default;\n" + '$timestamp: "' + lastCompile + '" !default;\n' + '$year: "' + year + '" !default;\n')
+  fs.writeFile('./src/scss/_timestamp.ejs', "$version: \"" + version + "\" !default;\n" + '$timestamp: "' + lastCompile + '" !default;\n' + '$year: "' + year + '" !default;\n')
   console.log('End::' + action)
 } catch (error) {
   consoleStamp(console, {format: ':date("yyyy-mm-dd HH:MM:ss").white.bgRed'});
