@@ -1,0 +1,46 @@
+{
+   "name": "ChordPro",
+   "short_name": "chordpro",
+   "start_url": ".",
+   "display": "standalone",
+   "background_color": "#fff",
+   "description": "This is the official site for ChordPro, a simple text format for the notation of lyrics with chords.",
+   "icons": [
+      {
+         "src": "\/chordpro-icon-trans-36_x_36.png",
+         "sizes": "36x36",
+         "type": "image\/png",
+         "density": "0.75"
+      },
+      {
+         "src": "\/chordpro-icon-trans-48_x_48.png",
+         "sizes": "48x48",
+         "type": "image\/png",
+         "density": "1.0"
+      },
+      {
+         "src": "\/chordpro-icon-trans-72_x_72.png",
+         "sizes": "72x72",
+         "type": "image\/png",
+         "density": "1.5"
+      },
+      {
+         "src": "\/chordpro-icon-trans-96_x_96.png",
+         "sizes": "96x96",
+         "type": "image\/png",
+         "density": "2.0"
+      },
+      {
+         "src": "\/chordpro-icon-trans-144_x_144.png",
+         "sizes": "144x144",
+         "type": "image\/png",
+         "density": "3.0"
+      },
+      {
+         "src": "\/chordpro-icon-trans-192_x_192.png",
+         "sizes": "192x192",
+         "type": "image\/png",
+         "density": "4.0"
+      }
+   ]
+}
