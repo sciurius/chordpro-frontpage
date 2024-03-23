@@ -33,8 +33,8 @@
     "js-compile": "rollup --config src/config/rollup.config.cjs --sourcemap --context window",
     "js-lint": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives .",
     "js-minify": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/chordpro-frontpage.js.map,includeSources,url=chordpro-frontpage.min.js.map\" --output dist/js/chordpro-frontpage.min.js dist/js/chordpro-frontpage.js",
-    "server": "sirv dist/ --dev --no-clear --port 3000",
-    "server-http": "http-server --port 3000 -o",
+    "server": "sirv dist/ --dev --no-clear --port 3099",
+    "server-http": "http-server --port 3099 -o",
     "start": "npm-run-all --parallel watch server",
     "watch": "nodemon --watch src -e html,ejs,scss -x \"npm run build\" --ignore src/scss/_timestamp.scss",
     "test": "npm-run-all css-lint css"
